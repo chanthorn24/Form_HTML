@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form info submit</title>
+</head>
+
+<body width="100%" style="padding: 0px 10px 0px 10px; font-family: Times;">
+    <form action="/my-backend/profile" method="post">
+        <table width="100%" style="background-color: rgb(68, 71, 68); padding:1%;">
+            <tr>
+                <td>
+                    <h1>Tell us about yourself</h1>
+                </td>
+            </tr>
+        </table>
+        <table width="100%" cellspacing="0px" cellpadding="0px" style="padding:0px 10px 0px 90px; border : 3px solid black;">
+            <tr>
+                <td>
+                    <h3>Profile information</h3>
+                </td>
+            </tr>
+            <tr width="100%">
+                <td width="50%">
+                    <div style="padding-bottom: 5px;"><label for="last_name">Last name</label></div>
+                    <input type="text" name="last_name" id="last_name" size="40$">
+                </td>
+                <td width="50%" style="padding-left: 5%;">
+                    <div style="padding-bottom: 5px;"><label for="first_name">First name</label></div>
+                    <input type="text" name="first_name" id="first_name" size="40%">
+                </td>
+            </tr>
+            <tr width="100%">
+                <td height="90px">
+                    <div style="padding-bottom: 5px;"><label for="email">Email</label></div>
+                    <input type="email" name="email" id="email" size="40%">
+                </td>
+                <td style="padding-left: 5%;">
+                    <div style="padding-bottom: 5px;"><label for="phone">Phone</label></div>
+                    <input type="text" name="phone" id="phone" size="40%">
+                </td>
+            </tr>
+            <tr width="40%">
+                <td height="60px" colspan="2">
+                    <span style="margin-right: 7%;">Gender</span>
+                    <input type="radio" name="gender" id="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="gender">Female</label>
+                </td>
+            </tr>
+            <tr width="100%">
+                <td style="border-top:3px solid black ;" colspan="2">
+                    <h3>Current Address</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="50px">
+                    <select name="province" required style="width: 15%; margin-right: 18%;">
+                        <option value="" disabled selected>Province/City</option>
+                        <option value="pp">Phnom Penh</option>
+                        <option value="kpc">Kompung Cham</option>
+                        <option value="tbk">Tbong Khmum</option>
+                    </select>
+                    <select name="province" required style="width: 15%; margin-right: 18%;">
+                        <option value="" disabled selected>Country</option>
+                        <option value="pp">Cambodia</option>
+                        <option value="kpc">Japan</option>
+                        <option value="tbk">South Korea</option>
+                    </select>
+                    <input type="text" name="post code" placeholder="Post Code">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="120px">
+                    <textarea name="address" id="address" cols="60" rows="5" placeholder="Address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Skills</h3>
+                    <div>
+                        <input type="checkbox" name="designing">Designing
+                        <input type="checkbox" name="db" style="margin-left: 20%;">Database management
+                    </div>
+                    <div>
+                        <input type="checkbox" name="coding">Coding
+                        <input type="checkbox" name="debug" style="margin-left: 22.4%; margin-top: 3%;">Debug
+                    </div>
+                </td>
+                <td>
+                    <h3>Language</h3>
+                    <div>
+                        <input type="checkbox" name="en">English
+                        <input type="checkbox" name="ch" style="margin-left: 20%;">Chinese
+                    </div>
+                    <div>
+                        <input type="checkbox" name="fr" style="margin-top: 3%;">French
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="90px">
+                    <h3>Experience</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="margin-right: 44%;">From</span>
+                    <span>To</span>
+                </td>
+                <td style="padding-left: 5%;"><span>Description</span></td>
+            </tr>
+            <tr>
+                <td height="50px">
+                    <input type="text" size="35%">
+                    <input type="text" size="35%" style="margin-left: 10%;">
+                </td>
+                <td style="padding-left: 5%;">
+                    <input type="text" size="70%">
+                </td>
+            </tr>
+            <tr>
+                <td height="50px">
+                    <input type="text" size="35%">
+                    <input type="text" size="35%" style="margin-left: 10%;">
+                </td>
+                <td style="padding-left: 5%;">
+                    <input type="text" size="70%">
+                </td>
+            </tr>
+            <tr>
+                <td height="50px">
+                    <input type="text" size="35%">
+                    <input type="text" size="35%" style="margin-left: 10%;">
+                </td>
+                <td style="padding-left: 5%;">
+                    <input type="text" size="70%">
+                </td>
+            </tr>
+            <tr>
+                <td height="50px">
+                    <input type="text" size="35%">
+                    <input type="text" size="35%" style="margin-left: 10%;">
+                </td>
+                <td style="padding-left: 5%;">
+                    <input type="text" size="70%">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="90px">
+                    <h3>Choice your profile photo</h3>
+                </td>
+            </tr>
+            <tr>
+                <td height="20px" colspan="2"><input type="file" name="photo" id="photo"></td>
+            </tr>
+            <tr>
+                <td height="110px" colspan="2" align="end" style="padding-right: 7%;"><input type="submit" style="background-color: rgb(94, 92, 243); color: white;"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
